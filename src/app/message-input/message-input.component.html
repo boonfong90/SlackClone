@@ -1,0 +1,7 @@
+<div>
+    <input type="text" [formControl]="messageForm" placeholder="message" id='text-form'>
+    <button (click)="sendMessage()" [class.disabled]="messageForm.invalid">Send</button>
+</div>
+<div>
+    {{errorMessages}}
+</div>

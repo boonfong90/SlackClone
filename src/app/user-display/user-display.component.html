@@ -1,0 +1,4 @@
+<h5>Users</h5>
+<div *ngFor="let user of users; let i = index" (click)="getvalue(i)">
+<span id='userform'>{{user.name}}({{user.chat.length}})</span>
+</div>
